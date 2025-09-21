@@ -2,10 +2,45 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>我的个人主页</title>
+  <title>王子坤 | Day 2</title>
+  <style>
+    /* --- 整张纸居中 --- */
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#f0f4f8;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    }
+    /* --- 卡片 --- */
+    .card{
+      background:#fff;
+      padding:40px 50px;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      text-align:center;
+    }
+    h1{ margin:0 0 10px; font-size:28px; color:#333; }
+    p{ margin:0 0 20px; color:#666; }
+    .btn{
+      display:inline-block;
+      padding:10px 24px;
+      background:#0066ff;
+      color:#fff;
+      border-radius:6px;
+      text-decoration:none;
+      transition:.3s;
+    }
+    .btn:hover{ background:#0053d9; }
+  </style>
 </head>
 <body>
-  <h1>你好，我是 王子坤</h1>
-  <p>今天是我学习前端的第一天 🎉</p>
+  <div class="card">
+    <h1>你好，我是王子坤</h1>
+    <p>今天是我学习前端的第 <strong>2</strong> 天</p>
+    <a class="btn" href="https://github.com/w666z666k" target="_blank">去看看我的 GitHub</a>
+  </div>
 </body>
 </html>
